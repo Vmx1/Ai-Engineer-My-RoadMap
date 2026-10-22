@@ -1,0 +1,266 @@
+🧠 AI Engineer — Master Roadmap
+🟢 المرحلة 1 — Python Foundation
+ Python Basics
+ Data Types
+ Conditions
+ Loops
+ Functions
+ Lists / Tuples / Sets / Dictionaries
+ Exceptions
+ Modules / Packages
+ File Handling
+ Comprehensions
+ OOP
+ Basic Python Problem Solving
+
+Status: ✅ COMPLETED
+
+🟢 المرحلة 2 — Data & Math Foundations
+NumPy
+ ndarray
+ dtype
+ shape / ndim / size
+ Indexing / Slicing
+ Boolean Masking
+ Advanced Indexing
+ Broadcasting
+ Vectorized Operations
+ Reshape
+ Axis
+ Transpose / Flatten
+ Random
+ Matrix Operations
+ NumPy Mini Project
+
+Status: ✅ COMPLETED
+
+Pandas
+ DataFrame / Series
+ Selecting Data
+ head() / tail()
+ Filtering
+ loc
+ iloc
+ sort_values()
+ drop()
+ rename()
+ Add / Modify Columns
+ Missing Values
+ Duplicates
+ groupby()
+ agg()
+ value_counts()
+ apply()
+ merge()
+ concat()
+ CSV / Excel I/O
+ Pandas Mini Project
+Visualization
+ Matplotlib
+ Plot types
+ Subplots
+ Labels / Legends
+ Data Visualization Mini Project
+Mathematics
+ Linear Algebra
+ Vectors
+ Matrices
+ Matrix Operations
+ Dot Product
+ Eigenvalues / Eigenvectors — practical understanding
+ Probability
+ Statistics
+ Distributions
+ Mean / Variance / Standard Deviation
+ Correlation
+ Covariance
+ Derivatives
+ Gradients
+ Optimization intuition
+
+Status: 🟡 IN PROGRESS
+
+🔵 المرحلة 3 — Machine Learning
+ ML Concepts
+ Supervised Learning
+ Unsupervised Learning
+ Regression
+ Classification
+ Clustering
+ Linear Regression
+ Logistic Regression
+ Decision Trees
+ Random Forest
+ Gradient Boosting
+ KNN
+ SVM
+ K-Means
+ Feature Engineering
+ Train / Validation / Test
+ Cross Validation
+ Metrics
+ Hyperparameter Tuning
+ Overfitting / Underfitting
+ Pipelines
+ Scikit-learn
+ ML Project
+🟣 المرحلة 4 — Deep Learning
+ Neural Networks
+ Perceptron
+ Activation Functions
+ Forward Propagation
+ Loss Functions
+ Backpropagation
+ Gradient Descent
+ Optimizers
+ Regularization
+ PyTorch
+ Tensors
+ Dataset / DataLoader
+ Training Loops
+ CNN
+ RNN
+ LSTM / GRU
+ Attention Basics
+ Deep Learning Projects
+🟠 المرحلة 5 — Transformers & LLMs
+ NLP Foundations
+ Tokenization
+ Embeddings
+ Positional Encoding
+ Self-Attention
+ Multi-Head Attention
+ Transformer Architecture
+ Encoder / Decoder
+ Hugging Face
+ Pretrained Models
+ Fine-Tuning Concepts
+ LLM Architecture
+ Context Window
+ Temperature / Sampling
+ LLM APIs
+🔥 المرحلة 6 — LLM Engineering
+ Prompt Engineering
+ Structured Output
+ Function Calling
+ Tool Calling
+ Streaming
+ Embeddings
+ Vector Databases
+ Chunking
+ Retrieval
+ Reranking
+ RAG
+ RAG Evaluation
+ LangChain
+ LlamaIndex
+ Agents
+ Agentic Workflows
+ Memory
+ Multi-Agent Systems
+ LLM Evaluation
+ Guardrails
+ Cost / Latency Optimization
+🚀 المرحلة 7 — Advanced AI
+ Fine-Tuning
+ LoRA
+ QLoRA
+ PEFT
+ Quantization
+ Model Optimization
+ Multimodal AI
+ Vision Models
+ Speech-to-Text
+ Text-to-Speech
+ AI Agents Advanced
+ Local LLMs
+ Ollama
+ Model Serving
+🌐 المرحلة 8 — Backend for AI
+
+دي مش عشان تبقى Backend Developer؛ دي عشان تقدر تبني وتقدم أنظمة AI حقيقية.
+
+ HTTP
+ REST APIs
+ FastAPI
+ Pydantic
+ PostgreSQL
+ SQL Advanced
+ SQLAlchemy
+ Database Design
+ Authentication
+ JWT
+ Authorization
+ Async Programming
+ Background Tasks
+ WebSockets
+ Redis
+ Caching
+ Rate Limiting
+ API Security
+ File Uploads
+ AI API Integration
+🏭 المرحلة 9 — Production / MLOps
+ Git Advanced
+ Linux
+ Docker
+ Docker Compose
+ Testing
+ Pytest
+ Logging
+ Error Handling
+ Configuration / Environment Variables
+ CI/CD
+ GitHub Actions
+ Model Versioning
+ Experiment Tracking
+ Model Deployment
+ API Deployment
+ Cloud Basics
+ Monitoring
+ AI/LLM Observability
+ Performance Optimization
+ Scalability
+🎨 المرحلة 10 — Frontend Supporting Skills
+
+مش هدفنا Frontend Developer، لكن لازم تعرف تتعامل مع الـ UI.
+
+ HTML
+ CSS
+ Responsive Design
+ JavaScript Fundamentals
+ DOM
+ Fetch / APIs
+ Async JS
+ React Fundamentals
+ Components
+ State
+ API Integration
+ Authentication Integration
+ AI-generated UI Review / Debugging
+🏆 المرحلة 11 — Final AI Engineer Projects
+Project 1
+ ML Project
+Project 2
+ Deep Learning Project
+Project 3
+ RAG System
+Project 4
+ AI Agent
+Project 5
+ Multimodal AI Project
+Final Production Project
+ React Frontend
+ FastAPI Backend
+ Authentication
+ PostgreSQL
+ Redis
+ LLM
+ RAG
+ Vector DB
+ Agents
+ Testing
+ Docker
+ CI/CD
+ Deployment
+ Monitoring
