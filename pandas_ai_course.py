@@ -194,4 +194,5 @@ data['passed'] = data['score'] >= 70 # adding a new column
 data.to_csv('students_result.csv' , index=False) # save changes 
 
 top_student = data[data['score']] >= 80 # boolen masking
-top_student.to_excel('top_students.xlsx')
+top_student.to_excel('top_students.xlsx') # save changes 
+
