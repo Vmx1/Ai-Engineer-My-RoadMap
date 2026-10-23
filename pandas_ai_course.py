@@ -191,7 +191,7 @@ print(result)
 print('_' * 20)
 data = pd.read_csv('students.csv') # read csv as dataframe
 data['passed'] = data['score'] >= 70 # adding a new column
-data.to_csv('students_result.csv' , index=False)
+data.to_csv('students_result.csv' , index=False) # save changes 
 
 top_student = data[data['score']] >= 80 # boolen masking
 top_student.to_excel('top_students.xlsx')
