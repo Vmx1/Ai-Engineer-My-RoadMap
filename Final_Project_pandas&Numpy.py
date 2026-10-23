@@ -1,6 +1,6 @@
-import numpy as np
+import numpy as np #--> made by mahmoud sameh i wrote all of this without AI 10|24|2026 : 2:44M
 import pandas as pd
-
+#----------------
 students = pd.DataFrame({
     "student_id": [101, 102, 103, 104, 105, 106],
     "name": ["Ahmed", "Mona", "Ali", "Sara", "Omar", "Youssef"],
@@ -9,5 +9,15 @@ students = pd.DataFrame({
     "science": [85, 80, 50, 92, 65, 95],
     "english": [88, 70, 55, 85, 72, 90]
 })
+#-----------------------
+# [1] Numpy | first step
+#----------------------
+# convert pandas to numpy 
+#-----------
+nmpy  = students[['math' , 'science' , 'english']].to_numpy() # from Dataframe pandas to numpy
+print(np.mean(nmpy , axis=0)) # average score of each column
+print(np.max(nmpy)) # max. score
+print(np.min(nmpy)) # min. score
+print(np.std(nmpy)) # بعد تشتت من المتوسط 
+#-------------------
 
-print(students)
