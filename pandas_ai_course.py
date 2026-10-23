@@ -190,7 +190,7 @@ print(result)
 #------
 print('_' * 20)
 data = pd.read_csv('students.csv') # read csv as dataframe
-data['passed'] = data['score'] >= 70
+data['passed'] = data['score'] >= 70 # adding a new column
 data.to_csv('students_result.csv' , index=False)
 
 top_student = data[data['score']] >= 80 # boolen masking
