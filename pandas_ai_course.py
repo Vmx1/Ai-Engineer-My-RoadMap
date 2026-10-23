@@ -189,7 +189,7 @@ print(result)
 # read csv , read execl
 #------
 print('_' * 20)
-data = pd.read_csv('students.csv')
+data = pd.read_csv('students.csv') # read csv as dataframe
 data['passed'] = data['score'] >= 70
 data.to_csv('students_result.csv' , index=False)
 
