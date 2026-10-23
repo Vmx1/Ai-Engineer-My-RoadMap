@@ -193,5 +193,5 @@ data = pd.read_csv('students.csv')
 data['passed'] = data['score'] >= 70
 data.to_csv('students_result.csv' , index=False)
 
-top_student = data['score'] >= 80
+top_student = data[data['score']] >= 80 # boolen masking
 top_student.to_excel('top_students.xlsx')
