@@ -21,7 +21,12 @@ print(np.mean(nmpy , axis=0)) # average score of each column
 print(np.max(nmpy)) # max. score
 print(np.min(nmpy)) # min. score
 print(np.std(nmpy)) # بعد تشتت من المتوسط 
-#-------------------
+print(nmpy.reshape(1,-1)) # reshaping a columns and reshaping a rows automatic -1
+print(nmpy.reshape(-1,1)) # reshaping a rows and reshaping a columns automatic -1
+print(nmpy.flatten()) # from 2Dim to 1Dim
+print(nmpy[[0 , 2 , 3]]) # boolen masking
+print(nmpy[1]) # Indexing
+#------------------- 
 # [2] pandas | Second Step -> groupby & agg
 #---------
 classes = students.groupby('class').agg({
