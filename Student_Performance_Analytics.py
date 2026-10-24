@@ -11,10 +11,13 @@ students = pd.DataFrame({
     "science": [85, 80, 50, 92, 65, 95],
     "english": [88, 70, 55, 85, 72, 90]
 })
-
-# First average
-
+#-------------------
+# First : average
+#-------
 np_data = students[['math' , 'science' , 'english']].to_numpy()
-average = np.mean(np_data , axis=0) 
+students['average'] = np.mean(np_data , axis=1) # 0 : column , 1 = row
 
-print(average)
+best_average = students["average"].max()
+best_student = students.loc[students["average"] ==  best_average , ['name' , 'average']] 
+
+print(best_student)
