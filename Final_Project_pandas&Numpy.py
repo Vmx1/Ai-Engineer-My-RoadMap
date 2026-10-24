@@ -96,3 +96,18 @@ group2 = pd.DataFrame({
 })
 
 print(pd.concat([group1 , group2] , ignore_index=True))
+#-------------
+# read csv , excel
+#---
+
+csv_data = pd.read_csv('students.csv') 
+print(csv_data)
+
+
+tops_student = csv_data[csv_data['score'] >= 80 ].sort_values(['score'] , ascending=False)
+tops_student['status'] = tops_student['score'].apply(check_score)
+
+tops_student.to_excel('top_students.xlsx' , index=False)
+
+print(pd.read_excel('top_students.xlsx'))
+
