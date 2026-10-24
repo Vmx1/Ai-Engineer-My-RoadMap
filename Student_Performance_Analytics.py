@@ -49,6 +49,12 @@ print(students[['name' , 'average' , 'status']])
 #----------
 passed = students[(students['average'] >= 70)]
 failed = students[(students['average'] < 70)]
+
+passed_count = len(passed) / len(students) * 100
+failed_count = len(failed) / len(students) * 100
+print('Here')
+print(passed_count)
+print(failed_count)
 #-------------
 # Groupy , agg
 #------
@@ -64,3 +70,11 @@ average = students.groupby('class')['average'].mean()
 class_average = average.max()
 class_name = average.idxmax() # Extract the max average class name
 #------------------------------
+# Mean , Max , Min , Standard Deviation
+#-----
+
+print(np_data.max(axis=0))
+print(np_data.min(axis=0))
+np_mean = np_data.mean(axis=0)
+print(np_mean)
+std_subjects = np.std(np_data , axis=0).argmax()
