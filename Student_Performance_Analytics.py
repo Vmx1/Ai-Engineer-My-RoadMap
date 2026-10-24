@@ -28,3 +28,20 @@ print(best_student)
 print(students.sort_values("average" , ascending=True ,ignore_index=True))
 
 #-----------
+# Status
+#-------
+def check_score(score) :
+    if score >= 90 :
+        return 'Excellent'
+    elif score >= 80 :
+        return 'Very Good'
+    elif score >= 70 :
+        return 'Good'
+    else :
+        return 'Bad'
+    
+students['status'] = students['average'].apply(check_score)
+
+print(students[['name' , 'average' , 'status']])
+
+#------------------------
