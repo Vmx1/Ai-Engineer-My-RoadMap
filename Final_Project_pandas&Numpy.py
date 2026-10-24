@@ -80,3 +80,19 @@ ages = pd.DataFrame({  # right
 })
 
 print(pd.merge(scores , ages , on='name' , how='outer').fillna('None'))
+
+#-------
+# Concat 
+#----
+
+group1 = pd.DataFrame({
+    "name": ["Ahmed", "Mona"],
+    "score": [95, 75]
+})
+
+group2 = pd.DataFrame({
+    "name": ["Ali", "Sara"],
+    "score": [50, 88]
+})
+
+print(pd.concat([group1 , group2] , ignore_index=True))
