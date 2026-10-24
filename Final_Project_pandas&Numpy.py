@@ -66,3 +66,17 @@ df['status'] = df['score'].apply(check_score).fillna('Bad')
 print(df.sort_values(['score'], ascending=False)) # from bigger to smaller
 
 #-----------------
+# merge & concat
+#----
+
+scores = pd.DataFrame({ # left
+    "name": ["Ahmed", "Mona", "Ali"],
+    "score": [95, 75, 50]
+})
+
+ages = pd.DataFrame({  # right
+    "name": ["Ahmed", "Ali", "Sara"],
+    "age": [19, 20, 22]
+})
+
+print(pd.merge(scores , ages , on='name' , how='outer').fillna('None'))
