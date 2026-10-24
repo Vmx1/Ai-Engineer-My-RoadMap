@@ -1,5 +1,7 @@
 import numpy as np #--> made by mahmoud sameh i wrote all of this without AI 10|24|2026 : 2:44M
 import pandas as pd
+#-------------------------
+# Student Performance Analytics
 #----------------
 students = pd.DataFrame({
     "student_id": [101, 102, 103, 104, 105, 106],
@@ -31,3 +33,4 @@ print(classes)
 #-------------
 # continue
 #---------
+
