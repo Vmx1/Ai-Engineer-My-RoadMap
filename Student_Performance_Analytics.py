@@ -45,3 +45,7 @@ students['status'] = students['average'].apply(check_score)
 print(students[['name' , 'average' , 'status']])
 
 #------------------------
+# Number of those who passed and those who failed
+#----------
+passed = students[(students['average'] >= 70)]
+failed = students[(students['average'] < 70)]
