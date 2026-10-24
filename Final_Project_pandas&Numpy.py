@@ -23,9 +23,10 @@ print(np.min(nmpy)) # min. score
 print(np.std(nmpy)) # بعد تشتت من المتوسط 
 print(nmpy.reshape(1,-1)) # reshaping a columns and reshaping a rows automatic -1
 print(nmpy.reshape(-1,1)) # reshaping a rows and reshaping a columns automatic -1
-print(nmpy.flatten()) # from 2Dim to 1Dim
 print(nmpy[[0 , 2 , 3]]) # boolen masking
 print(nmpy[1]) # Indexing
+print(nmpy.flatten()) # from 2Dim to 1Dim
+print(nmpy[(nmpy >= 80) & (nmpy <= 70) ]) # boolen masking , nmpy >= 80 and nmpy =< 70
 #------------------- 
 # [2] pandas | Second Step -> groupby & agg
 #---------
@@ -38,4 +39,6 @@ print(classes)
 #-------------
 # continue
 #---------
+
+
 
