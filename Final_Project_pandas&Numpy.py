@@ -51,3 +51,18 @@ print(df.iloc[0]) # Index location
 print(df.loc[0 , ['name' , 'score']]) # location by number with specific things : name , score
 print(df.loc[(df['score'] >= 80)])
 df['passed'] = df['score'] >= 70 # if score >= 70 : True else False
+#--------------
+# apply()
+#---
+def check_score(score) :
+    if score >= 90 :
+        return 'Execellent'
+    elif score >= 80 :
+        return 'Very Good'
+    elif score >= 70 :
+        return 'Good'
+
+df['status'] = df['score'].apply(check_score).fillna('Bad') 
+print(df.sort_values(['score'], ascending=False)) # from bigger to smaller
+
+#-----------------
