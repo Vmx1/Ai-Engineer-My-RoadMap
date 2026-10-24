@@ -10,7 +10,7 @@ students = pd.DataFrame({
     "english": [88, 70, 55, 85, 72, 90]
 })
 #-----------------------
-# [1] Numpy | first step
+# [1] Numpy | First Step
 #----------------------
 # convert pandas to numpy 
 #-----------
@@ -20,4 +20,14 @@ print(np.max(nmpy)) # max. score
 print(np.min(nmpy)) # min. score
 print(np.std(nmpy)) # بعد تشتت من المتوسط 
 #-------------------
-
+# [2] pandas | Second Step -> groupby & agg
+#---------
+classes = students.groupby('class').agg({
+    'math': ['mean' , 'min' , 'max'],
+    'science': ['mean' , 'min' , 'max'],
+    'english': ['mean' , 'min' , 'max']
+})
+print(classes)
+#-------------
+# continue
+#---------
