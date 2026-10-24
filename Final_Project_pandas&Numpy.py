@@ -30,7 +30,10 @@ print(nmpy[(nmpy >= 80) & (nmpy <= 70) ]) # boolen masking , nmpy >= 80 and nmpy
 #------------------- 
 # [2] pandas | Second Step -> groupby & agg
 #---------
-classes = students.groupby('class').agg({
+print(students.head(3))
+print(students.tail(2))
+
+classes = students.groupby('class').agg({ # Grouping all students in class A , B
     'math': ['mean' , 'min' , 'max'],
     'science': ['mean' , 'min' , 'max'],
     'english': ['mean' , 'min' , 'max']
@@ -39,6 +42,12 @@ print(classes)
 #-------------
 # continue
 #---------
-
-
-
+df = pd.DataFrame({
+    "name": ["Ahmed", "Ali", "Omar", "Youssef", "Hassan"],
+    "age": [20, 21, 19, 22, 20],
+    "score": [85, 72, 95, 60, 88]
+})
+print(df.iloc[0]) # Index location
+print(df.loc[0 , ['name' , 'score']]) # location by number with specific things : name , score
+print(df.loc[(df['score'] >= 80)])
+df['passed'] = df['score'] >= 70 # if score >= 70 : True else False
