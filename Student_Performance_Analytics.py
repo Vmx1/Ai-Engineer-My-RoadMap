@@ -49,3 +49,18 @@ print(students[['name' , 'average' , 'status']])
 #----------
 passed = students[(students['average'] >= 70)]
 failed = students[(students['average'] < 70)]
+#-------------
+# Groupy , agg
+#------
+
+average_subject =students.groupby('class').agg({
+    'math' : ['mean'] ,
+    'science' : ['mean'] ,
+    'english' : ['mean'] 
+})
+print(average_subject.mean())
+
+average = students.groupby('class')['average'].mean()
+class_average = average.max()
+class_name = average.idxmax() # Extract the max average class name
+#------------------------------
