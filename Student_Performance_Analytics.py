@@ -21,3 +21,10 @@ best_average = students["average"].max()
 best_student = students.loc[students["average"] ==  best_average , ['name' , 'average']] 
 
 print(best_student)
+#---------------
+# ascending order
+#------
+
+print(students.sort_values("average" , ascending=True ,ignore_index=True))
+
+#-----------
