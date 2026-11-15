@@ -11,13 +11,13 @@ csv_3 = pd.read_csv('orders_q2.csv')
 #-------------
 # Info & Describe
 #------
-print(csv_1.info())
+csv_1.info()
 print(csv_1.describe())
 
-print(csv_2.info())
+csv_2.info()
 print(csv_2.describe())
 
-print(csv_3.info())
+csv_3.info()
 print(csv_3.describe())
 #---------------------
 # How many Row and Columns
@@ -31,7 +31,13 @@ print(numpy_cs3.shape)
 #----------
 # Finding Missing Values
 #------
-print(csv_1.isna().sum()) # 1 city
-print(csv_2.isna().sum()) # 2 unit_price
-print(csv_3.isna().sum()) # none
+print(csv_1.isna().sum())
+print(csv_2.isna().sum())
+print(csv_3.isna().sum()) 
 #-------------
+# Duplicate Rows
+#-----
+print(csv_1.duplicated().sum())
+print(csv_2.duplicated().sum())
+print(csv_3.duplicated().sum())
+#----------------------
