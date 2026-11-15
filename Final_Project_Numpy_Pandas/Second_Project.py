@@ -13,9 +13,9 @@ csv_3 = pd.read_csv('orders_q2.csv')
 print(csv_1.info())
 print(csv_1.describe())
 
-print(csv_1.info())
-print(csv_1.describe())
+print(csv_2.info())
+print(csv_2.describe())
 
-print(csv_1.info())
-print(csv_1.describe())
+print(csv_3.info())
+print(csv_3.describe())
 #---------------------
