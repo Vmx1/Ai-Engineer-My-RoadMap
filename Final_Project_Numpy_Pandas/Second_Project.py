@@ -22,9 +22,11 @@ print(csv_3.describe())
 #---------------------
 # How many Row and Columns
 #-----
-numpy = csv_1.to_numpy()
-print(numpy.shape)
-numpy = csv_2.to_numpy()
-print(numpy.shape)
-numpy = csv_3.to_numpy()
-print(numpy.shape)
+numpy_cs1 = csv_1.to_numpy()
+print(numpy_cs1.shape)
+numpy_cs2 = csv_2.to_numpy()
+print(numpy_cs2.shape)
+numpy_cs3 = csv_3.to_numpy()
+print(numpy_cs3.shape)
+#----------
+
