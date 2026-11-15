@@ -29,4 +29,9 @@ print(numpy_cs2.shape)
 numpy_cs3 = csv_3.to_numpy()
 print(numpy_cs3.shape)
 #----------
-
+# Finding Missing Values
+#------
+print(csv_1.isna().sum()) # 1 city
+print(csv_2.isna().sum()) # 2 unit_price
+print(csv_3.isna().sum()) # none
+#-------------
