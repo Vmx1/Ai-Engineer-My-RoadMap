@@ -8,3 +8,14 @@ csv_1 = pd.read_csv('customer.csv')
 csv_2 = pd.read_csv('orders_q1.csv')
 csv_3 = pd.read_csv('orders_q2.csv')
 #-------------
+# Info & Describe
+#------
+print(csv_1.info())
+print(csv_1.describe())
+
+print(csv_1.info())
+print(csv_1.describe())
+
+print(csv_1.info())
+print(csv_1.describe())
+#---------------------
