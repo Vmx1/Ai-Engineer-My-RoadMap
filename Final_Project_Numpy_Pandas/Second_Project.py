@@ -1,7 +1,8 @@
 # This Maded By Mahmoud Sameh 11|15|2026 ....it taken so long time to finish the first step
 # but its okay we still have a chance to be better :) Never Give UP
 #------------------------
-import pandas as pd
+import pandas as pd 
+import numpy as np
 #----------
 # Read Csv Files
 csv_1 = pd.read_csv('customer.csv')
@@ -19,3 +20,11 @@ print(csv_2.describe())
 print(csv_3.info())
 print(csv_3.describe())
 #---------------------
+# How many Row and Columns
+#-----
+numpy = csv_1.to_numpy()
+print(numpy.shape)
+numpy = csv_2.to_numpy()
+print(numpy.shape)
+numpy = csv_3.to_numpy()
+print(numpy.shape)
