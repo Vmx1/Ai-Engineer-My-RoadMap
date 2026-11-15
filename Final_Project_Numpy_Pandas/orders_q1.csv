@@ -1,0 +1,15 @@
+order_id,customer_id,product,category,quantity,unit_price,order_date
+5001,101,Laptop,Electronics,1,25000,2026-01-03
+5002,102,Mouse,Accessories,2,450,2026-01-04
+5003,103,Desk,Furniture,1,6000,2026-01-05
+5004,104,Keyboard,Accessories,1,1200,2026-01-06
+5005,105,Monitor,Electronics,2,7000,2026-01-07
+5006,101,Mouse,Accessories,3,450,2026-01-08
+5007,106,Chair,Furniture,2,2500,2026-01-09
+5008,103,Laptop,Electronics,1,25000,2026-01-10
+5009,102,Desk,Furniture,1,6000,2026-01-11
+5010,105,Headphones,Accessories,2,1500,2026-01-12
+5011,106,Monitor,Electronics,1,7000,2026-01-13
+5011,106,Monitor,Electronics,1,7000,2026-01-13
+5012,104,Chair,Furniture,,2500,2026-01-14
+5013,999,Mouse,Accessories,2,,2026-01-15

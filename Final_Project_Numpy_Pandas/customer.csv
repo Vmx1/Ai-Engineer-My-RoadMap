@@ -1,0 +1,8 @@
+customer_id,name,city,segment
+101,Ahmed,Cairo,Consumer
+102,Mona,Alexandria,Corporate
+103,Ali,Giza,Consumer
+104,Sara,,Home Office
+105,Omar,Alexandria,Consumer
+106,Youssef,Cairo,Corporate
+107,Nour,Aswan,Consumer
