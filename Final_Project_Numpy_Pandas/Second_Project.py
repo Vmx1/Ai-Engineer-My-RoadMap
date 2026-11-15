@@ -41,3 +41,29 @@ print(csv_1.duplicated().sum())
 print(csv_2.duplicated().sum())
 print(csv_3.duplicated().sum())
 #----------------------
+# Finding a client who not in customers csv
+#-------
+orders_1 = csv_2['customer_id']
+orders_2 = csv_3['customer_id']
+
+orders= pd.concat([orders_1 , orders_2] , ignore_index=True).unique()
+orders = set(orders)
+
+customers = csv_1['customer_id'].unique()
+customers = set(customers)
+
+print(orders - customers)
+
+
+#----------------------
+# 
+#-------
+
+
+
+
+
+
+#----------------------
+#
+#-------
