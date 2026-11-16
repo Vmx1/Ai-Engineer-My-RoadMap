@@ -1,6 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 #-----------------------------
+# Pandas
+#--------
 
 data = {
     'student': [
@@ -56,3 +58,53 @@ def performce_student(score) :
 
 df['performance'] = df['total_average'].apply(performce_student)
 print(df)
+#---------------------
+# Matplotlib
+#-------
+
+fig , axes = plt.subplots(2,2 , figsize=(14,9))
+fig.suptitle(
+    'Student Performance Analytics',
+    fontsize=16,
+    fontweight='bold'
+)
+# Bar
+df.plot(
+    x='student' ,
+    y='total_average',
+    kind='bar' ,
+    ax=axes[0,0],
+    xlabel='Students',
+    ylabel='Total Average',
+    
+)
+# line
+avg_subject = df[['math','science','english']].mean()
+avg_subject.plot(
+    kind='line',
+    ax=axes[0,1],
+    marker = 'o',
+    color='red',
+    linestyle='-.',
+    xlabel='Subjects'
+)
+# Histogam
+df.plot(
+    x='total_average',
+    kind='hist' ,
+    ax=axes[1,0],
+    bins=5,
+    xlabel='Average Score',
+    ylabel='Number of Students'
+)
+# scatter
+
+df.plot(
+    x='math',
+    y='science',
+    kind='scatter',
+    ax=axes[1,1]
+)
+
+plt.tight_layout(rect=[0, 0, 1, 0.95])
+plt.show()
