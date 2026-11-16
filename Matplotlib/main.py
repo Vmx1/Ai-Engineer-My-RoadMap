@@ -33,12 +33,22 @@ grades = [85, 92, 65, 78, 88]
 #--------
 # Bar Plot
 #--------------------
-plt.bar(students , grades )
-plt.title('Student Grades')
-plt.xlabel('students')
-plt.ylabel('grades')
-plt.grid(axis="y")
+# plt.bar(students , grades )
+# plt.title('Student Grades')
+# plt.xlabel('students')
+# plt.ylabel('grades')
+# plt.grid(axis="y")
+# plt.show()
+
+#--------
+# scatter Plot
+#--------------------
+study_hours = [1, 2, 3, 4, 5, 6, 7, 8]
+grades = [45, 50, 55, 65, 68, 78, 85, 92]
+
+plt.scatter(study_hours , grades)
+plt.title('Student Evaluation')
+plt.xlabel('Study Hours')
+plt.ylabel('Grades')
 plt.show()
-
-
 #--------
