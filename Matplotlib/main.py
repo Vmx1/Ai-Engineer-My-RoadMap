@@ -60,20 +60,34 @@ grades = [85, 92, 65, 78, 88]
 #--------
 # Subplots
 #--------------------
-fig , axes = plt.subplots(2,2)
-# line plot
-axes[0,0].plot(students , grades)
-axes[0,0].set_title('Line Plot')
-#----------
-# bar plot
-axes[0,1].bar(students , grades)
-axes[0,1].set_title('Bar Plot')
-# hist plot
-axes[1,0].hist(grades , bins=5)
-axes[1,0].set_title('Histogram Plot')
-# scatter plot
-axes[1,1].scatter(study_hours , grades)
-axes[1,1].set_title('Scatter Plot')
+# fig , axes = plt.subplots(2,2)
+# # line plot
+# axes[0,0].plot(students , grades)
+# axes[0,0].set_title('Line Plot')
+# #----------
+# # bar plot
+# axes[0,1].bar(students , grades)
+# axes[0,1].set_title('Bar Plot')
+# # hist plot
+# axes[1,0].hist(grades , bins=5)
+# axes[1,0].set_title('Histogram Plot')
+# # scatter plot
+# axes[1,1].scatter(study_hours , grades)
+# axes[1,1].set_title('Scatter Plot')
 
-plt.tight_layout()
+# plt.tight_layout()
+# plt.show()
+#-------------------------
+# Customization & Styling
+#---------
+students = ["Ahmed", "Mona", "Ali", "Sara", "Omar"]
+grades = [85, 92, 65, 78, 88]
+
+plt.figure(figsize=(10,5))
+plt.plot(students,grades , color='blue' , marker='o')
+plt.title('Students Grades')
+
+plt.xlabel('Students')
+plt.ylabel('Grades')
+
 plt.show()
