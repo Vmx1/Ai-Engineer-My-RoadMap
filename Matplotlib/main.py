@@ -101,5 +101,13 @@ plt.xlabel('Students')
 plt.ylabel('Grades')
 
 #-------------------
+# Spines
+#------
+ax = plt.gca()
+
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['bottom'].set_linewidth(2)
+ax.spines['left'].set_color('gray')
 
 plt.show()
