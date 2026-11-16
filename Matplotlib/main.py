@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 students = ["Ahmed", "Mona", "Ali", "Sara", "Omar"]
 
-grades = [85, 92, 65, 78, 88]
+grades = [45, 50, 55, 65, 68, 78, 85, 92]
 
 # plt.plot(students , grades)
 
@@ -43,12 +43,20 @@ grades = [85, 92, 65, 78, 88]
 #--------
 # scatter Plot
 #--------------------
-study_hours = [1, 2, 3, 4, 5, 6, 7, 8]
-grades = [45, 50, 55, 65, 68, 78, 85, 92]
+# study_hours = [1, 2, 3, 4, 5, 6, 7, 8]
+# grades = [45, 50, 55, 65, 68, 78, 85, 92]
 
-plt.scatter(study_hours , grades)
-plt.title('Student Evaluation')
-plt.xlabel('Study Hours')
-plt.ylabel('Grades')
+# plt.scatter(study_hours , grades)
+# plt.title('Student Evaluation')
+# plt.xlabel('Study Hours')
+# plt.ylabel('Grades')
+# plt.show()
+#--------
+# Histogram Plot
+#--------------------
+plt.hist(grades , bins=5)
+plt.title("Grades Distribution")
+plt.xlabel("Grades")
+plt.ylabel("Frequency")
 plt.show()
 #--------
