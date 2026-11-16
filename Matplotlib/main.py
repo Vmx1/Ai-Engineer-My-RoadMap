@@ -8,28 +8,37 @@ students = ["Ahmed", "Mona", "Ali", "Sara", "Omar"]
 
 grades = [85, 92, 65, 78, 88]
 
-plt.plot(students , grades)
+# plt.plot(students , grades)
 
-plt.title('Student\'s Grade')
+# plt.title('Student\'s Grade')
 
-plt.xlabel('Student')
-plt.ylabel('Grade')
+# plt.xlabel('Student')
+# plt.ylabel('Grade')
 
 #--------------
 # Line Plot
 #--------------------
 
-plt.plot(
-    students ,
-    grades ,
-    marker='o',
-    linestyle = '--',
-    linewidth = 3
-)
+# plt.plot(
+#     students ,
+#     grades ,
+#     marker='o',
+#     linestyle = '--',
+#     linewidth = 3
+# )
 
-plt.xlabel("students")
-plt.ylabel("grades")
+# plt.xlabel("students")
+# plt.ylabel("grades")
 
+#--------
+# Bar Plot
+#--------------------
+plt.bar(students , grades )
+plt.title('Student Grades')
+plt.xlabel('students')
+plt.ylabel('grades')
+plt.grid(axis="y")
 plt.show()
+
 
 #--------
