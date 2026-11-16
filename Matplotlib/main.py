@@ -114,6 +114,36 @@ grades = [85, 92, 65, 78, 88]
 #-------------------
 # Matplotlib With Pandas
 #-------
+
+# data = {
+#     'student': ['Ahmed', 'Mona', 'Ali', 'Sara', 'Omar'],
+#     'math': [85, 92, 65, 78, 88],
+#     'science': [90, 85, 70, 95, 80]
+# }
+
+# df = pd.DataFrame(data)
+
+# fig , axes  = plt.subplots(1,2 ,figsize=(12,15))
+
+# df.plot(
+#     x='student',
+#     y='science' ,
+#     kind='line' ,
+#     title='Science Grades',
+#     ax=axes[0]
+# )
+
+# df.plot(
+#     y='math' ,
+#     kind='hist',
+#     bins = 5 ,
+#     title='Math Grades',
+#     ax=axes[1]
+# )
+
+#----------------------
+# Pandas Integration
+#--------
 import pandas as pd
 
 data = {
@@ -124,22 +154,37 @@ data = {
 
 df = pd.DataFrame(data)
 
-fig , axes  = plt.subplots(1,2 ,figsize=(12,15))
+fig , axes = plt.subplots(2,2 , figsize=(12,88))
 
 df.plot(
+    title='Math Bar',
     x='student',
-    y='science' ,
-    kind='line' ,
-    title='Science Grades',
-    ax=axes[0]
+    y='math',
+    kind='bar',
+    ax=axes[0,0]
 )
-
 df.plot(
-    y='math' ,
+    title='Science Line',
+    x='student',
+    y='science',
+    kind='line',
+    ax=axes[0,1]
+)
+df.plot(
+    title='Math Histogram',
+    y='math',
     kind='hist',
-    bins = 5 ,
-    title='Math Grades',
-    ax=axes[1]
+    ax=axes[1,0]
+)
+df.plot(
+    title='Math vs Science',
+    x='math',
+    y='science',
+    kind='scatter',
+    ax=axes[1,1]
 )
 
-#----------------------
+plt.tight_layout()
+plt.show()
+#-----------------------------
+# Donee :) the End , 11:46 AM 11|16|2026 @Mahmoud Sameh
