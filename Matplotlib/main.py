@@ -80,34 +80,66 @@ grades = [85, 92, 65, 78, 88]
 #-------------------------
 # Customization & Styling
 #---------
-students = ["Ahmed", "Mona", "Ali", "Sara", "Omar"]
-grades = [85, 92, 65, 78, 88]
+# students = ["Ahmed", "Mona", "Ali", "Sara", "Omar"]
+# grades = [85, 92, 65, 78, 88]
 
-plt.figure(figsize=(10,5)) # تغيير ابعاد الشكل عشان يكون مناسب للرسوم
-plt.plot(students,grades , color='purple' , 
-         linestyle='--' , label='Math' ,linewidth=3, alpha=0.7, marker='o')
+# plt.figure(figsize=(10,5)) # تغيير ابعاد الشكل عشان يكون مناسب للرسوم
+# plt.plot(students,grades , color='purple' , 
+#          linestyle='--' , label='Math' ,linewidth=3, alpha=0.7, marker='o')
 
-plt.legend() # To adding label for line
+# plt.legend() # To adding label for line
 
-plt.xticks(rotation=30)
-plt.yticks([0, 20, 40, 60, 80, 100])
+# plt.xticks(rotation=30)
+# plt.yticks([0, 20, 40, 60, 80, 100])
 
-plt.grid(axis='y')
-plt.ylim(0,100)
-plt.xlim(-1,5)
+# plt.grid(axis='y')
+# plt.ylim(0,100)
+# plt.xlim(-1,5)
 
-plt.title('Students Grades')
-plt.xlabel('Students')
-plt.ylabel('Grades')
+# plt.title('Students Grades')
+# plt.xlabel('Students')
+# plt.ylabel('Grades')
 
 #-------------------
 # Spines
 #------
-ax = plt.gca()
+# ax = plt.gca()
 
-ax.spines['top'].set_visible(False)
-ax.spines['right'].set_visible(False)
-ax.spines['bottom'].set_linewidth(2)
-ax.spines['left'].set_color('gray')
+# ax.spines['top'].set_visible(False)
+# ax.spines['right'].set_visible(False)
+# ax.spines['bottom'].set_linewidth(2)
+# ax.spines['left'].set_color('gray')
 
-plt.show()
+
+#-------------------
+# Matplotlib With Pandas
+#-------
+import pandas as pd
+
+data = {
+    'student': ['Ahmed', 'Mona', 'Ali', 'Sara', 'Omar'],
+    'math': [85, 92, 65, 78, 88],
+    'science': [90, 85, 70, 95, 80]
+}
+
+df = pd.DataFrame(data)
+
+fig , axes  = plt.subplots(1,2 ,figsize=(12,15))
+
+df.plot(
+    x='student',
+    y='science' ,
+    kind='line' ,
+    title='Science Grades',
+    ax=axes[0]
+)
+
+df.plot(
+    y='math' ,
+    kind='hist',
+    bins = 5 ,
+    title='Math Grades',
+    ax=axes[1]
+)
+
+#----------------------
