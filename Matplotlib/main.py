@@ -83,11 +83,23 @@ grades = [85, 92, 65, 78, 88]
 students = ["Ahmed", "Mona", "Ali", "Sara", "Omar"]
 grades = [85, 92, 65, 78, 88]
 
-plt.figure(figsize=(10,5))
-plt.plot(students,grades , color='blue' , marker='o')
-plt.title('Students Grades')
+plt.figure(figsize=(10,5)) # تغيير ابعاد الشكل عشان يكون مناسب للرسوم
+plt.plot(students,grades , color='purple' , 
+         linestyle='--' , label='Math' ,linewidth=3, alpha=0.7, marker='o')
 
+plt.legend() # To adding label for line
+
+plt.xticks(rotation=30)
+plt.yticks([0, 20, 40, 60, 80, 100])
+
+plt.grid(axis='y')
+plt.ylim(0,100)
+plt.xlim(-1,5)
+
+plt.title('Students Grades')
 plt.xlabel('Students')
 plt.ylabel('Grades')
+
+#-------------------
 
 plt.show()
