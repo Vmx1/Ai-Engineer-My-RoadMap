@@ -14,5 +14,22 @@ plt.title('Student\'s Grade')
 
 plt.xlabel('Student')
 plt.ylabel('Grade')
-plt.show()
+
 #--------------
+# Line Plot
+#--------------------
+
+plt.plot(
+    students ,
+    grades ,
+    marker='o',
+    linestyle = '--',
+    linewidth = 3
+)
+
+plt.xlabel("students")
+plt.ylabel("grades")
+
+plt.show()
+
+#--------
