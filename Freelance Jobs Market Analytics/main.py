@@ -66,3 +66,6 @@ print('Total Months : ', df['posted_month'].value_counts())
 #-----------------------------------------------
 # Stage 2
 #--------
+clean_df = df # New DF
+print(clean_df.dtypes)
+#------
