@@ -20,7 +20,13 @@ print(df.info())
 #-----------------
 # Duplicate
 #--------
-is_duplicated = df.duplicated().sum()
-print('Sum of Duplicate : ' , is_duplicated)
-
-
+is_empty = df.isna().sum()
+print('Is there empty values : ' , is_empty)
+is_duplicated_rows = df.duplicated().sum()
+print('Sum of Duplicate : ' , is_duplicated_rows)
+is_duplicated_ids = df.duplicated('project_id').sum()
+print('Sum of Duplicate : ' , is_duplicated_ids)
+#--------------------------
+# unique , value count , nunique
+#----------
+print(df['platform'].value_counts())
