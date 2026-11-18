@@ -12,6 +12,11 @@ df = pd.read_csv(r'c:\Users\mohan\Downloads\freelance_tech_market_100_synthetic.
 #------
 print(df.head(5))
 print(df.tail(5))
+r , c = df.shape
+print('Rows : ' , r)
+print('Columns : ' , c)
+print(df.dtypes)
+print(df.info())
 #-----------------
 # Duplicate
 #--------
