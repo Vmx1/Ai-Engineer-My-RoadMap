@@ -43,3 +43,6 @@ average_salary = df['budget_usd'].mean()
 print(max_salary)
 print(min_salary)
 print(average_salary)
+#----------------------
+# Distribution Inspection
+#-----------
