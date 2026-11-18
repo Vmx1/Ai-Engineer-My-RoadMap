@@ -35,3 +35,11 @@ print(df['platform'].value_counts())
 #---------------------------
 # Statistical Inspection
 #-----------
+print(df.describe())
+print(df.describe(include='object'))
+max_salary = df['budget_usd'].max()
+min_salary = df['budget_usd'].min()
+average_salary = df['budget_usd'].mean()
+print(max_salary)
+print(min_salary)
+print(average_salary)
