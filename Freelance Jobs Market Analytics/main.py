@@ -29,4 +29,6 @@ print('Sum of Duplicate : ' , is_duplicated_ids)
 #--------------------------
 # unique , value count , nunique
 #----------
+print(df['platform'].unique())
+print(df['platform'].nunique())
 print(df['platform'].value_counts())
