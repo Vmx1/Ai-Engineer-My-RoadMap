@@ -1,0 +1,101 @@
+project_id,platform,specialty,skill,experience_level,budget_usd,applicants_or_sellers_signal,illustrative_demand_weight,posted_month,data_type
+SIM-001,Upwork,Web Development,Full Stack Development,Intermediate,359,52,10,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-002,Fiverr,Web Development,Backend Development,Entry,1168,57,10,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-003,Freelancer,Web Development,Frontend Development,Intermediate,623,10,10,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-004,Upwork,Web Development,E-commerce Development,Expert,1879,51,10,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-005,Fiverr,Web Development,Web Design,Expert,1356,12,10,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-006,Freelancer,Web Development,Full Stack Development,Entry,1326,27,10,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-007,Upwork,Web Development,Backend Development,Intermediate,1987,44,10,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-008,Fiverr,Web Development,Frontend Development,Intermediate,1432,32,10,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-009,Freelancer,Web Development,E-commerce Development,Expert,366,38,10,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-010,Upwork,Web Development,Web Design,Entry,2167,55,10,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-011,Upwork,AI & Automation,AI Integration,Entry,828,43,9,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-012,Fiverr,AI & Automation,LLM Applications,Expert,458,54,9,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-013,Freelancer,AI & Automation,AI Chatbot Development,Entry,2776,44,9,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-014,Upwork,AI & Automation,Workflow Automation,Expert,1583,28,9,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-015,Fiverr,AI & Automation,n8n Automation,Entry,2277,12,9,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-016,Freelancer,AI & Automation,AI Integration,Expert,3706,42,9,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-017,Upwork,AI & Automation,LLM Applications,Entry,1761,20,9,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-018,Fiverr,AI & Automation,AI Chatbot Development,Entry,490,28,9,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-019,Freelancer,AI & Automation,Workflow Automation,Entry,1959,10,9,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-020,Upwork,AI & Automation,n8n Automation,Expert,1455,15,9,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-021,Upwork,Data Analytics,Data Analytics,Entry,2075,37,9,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-022,Fiverr,Data Analytics,Data Visualization,Entry,1423,55,9,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-023,Freelancer,Data Analytics,Python Pandas,Intermediate,1713,64,9,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-024,Upwork,Data Analytics,SQL Analytics,Expert,1868,34,9,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-025,Fiverr,Data Analytics,Power BI,Intermediate,603,54,9,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-026,Freelancer,Data Analytics,Data Analytics,Expert,1849,21,9,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-027,Upwork,Data Analytics,Data Visualization,Expert,1774,61,9,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-028,Fiverr,Data Analytics,Python Pandas,Entry,1090,55,9,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-029,Freelancer,Data Analytics,SQL Analytics,Intermediate,1267,39,9,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-030,Upwork,Data Analytics,Power BI,Entry,178,17,9,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-031,Upwork,Mobile Development,Flutter Development,Expert,1651,42,8,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-032,Fiverr,Mobile Development,React Native,Intermediate,3022,36,8,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-033,Freelancer,Mobile Development,iOS Development,Expert,2096,40,8,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-034,Upwork,Mobile Development,Android Development,Entry,498,36,8,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-035,Fiverr,Mobile Development,Mobile App Maintenance,Expert,2189,6,8,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-036,Freelancer,Mobile Development,Flutter Development,Intermediate,3444,17,8,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-037,Upwork,Mobile Development,React Native,Intermediate,3476,52,8,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-038,Fiverr,Mobile Development,iOS Development,Entry,2912,8,8,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-039,Freelancer,Mobile Development,Android Development,Expert,3229,21,8,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-040,Upwork,Mobile Development,Mobile App Maintenance,Expert,616,36,8,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-041,Upwork,Data Engineering & ML,Machine Learning,Intermediate,4982,31,7,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-042,Fiverr,Data Engineering & ML,Data Engineering,Intermediate,2235,38,7,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-043,Freelancer,Data Engineering & ML,ETL Pipelines,Intermediate,1838,3,7,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-044,Upwork,Data Engineering & ML,Deep Learning,Expert,3915,34,7,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-045,Fiverr,Data Engineering & ML,Data Mining,Expert,3656,9,7,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-046,Freelancer,Data Engineering & ML,Machine Learning,Intermediate,4706,9,7,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-047,Upwork,Data Engineering & ML,Data Engineering,Intermediate,2604,22,7,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-048,Fiverr,Data Engineering & ML,ETL Pipelines,Expert,1384,15,7,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-049,Freelancer,Data Engineering & ML,Deep Learning,Expert,3134,18,7,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-050,Upwork,Data Engineering & ML,Data Mining,Intermediate,1877,8,7,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-051,Upwork,DevOps & Cloud,AWS,Intermediate,1806,37,7,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-052,Fiverr,DevOps & Cloud,Docker,Expert,2194,13,7,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-053,Freelancer,DevOps & Cloud,Kubernetes,Intermediate,1370,32,7,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-054,Upwork,DevOps & Cloud,CI/CD,Expert,3604,20,7,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-055,Fiverr,DevOps & Cloud,Cloud Infrastructure,Intermediate,586,6,7,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-056,Freelancer,DevOps & Cloud,AWS,Expert,792,20,7,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-057,Upwork,DevOps & Cloud,Docker,Expert,3317,14,7,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-058,Fiverr,DevOps & Cloud,Kubernetes,Intermediate,2574,9,7,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-059,Freelancer,DevOps & Cloud,CI/CD,Intermediate,332,31,7,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-060,Upwork,DevOps & Cloud,Cloud Infrastructure,Intermediate,3069,19,7,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-061,Upwork,Cybersecurity,Security Auditing,Intermediate,873,21,6,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-062,Fiverr,Cybersecurity,Penetration Testing,Expert,3218,4,6,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-063,Freelancer,Cybersecurity,Application Security,Intermediate,3977,3,6,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-064,Upwork,Cybersecurity,Network Security,Expert,1103,13,6,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-065,Fiverr,Cybersecurity,Vulnerability Assessment,Intermediate,3453,5,6,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-066,Freelancer,Cybersecurity,Security Auditing,Intermediate,4009,7,6,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-067,Upwork,Cybersecurity,Penetration Testing,Intermediate,4951,21,6,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-068,Fiverr,Cybersecurity,Application Security,Intermediate,3140,22,6,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-069,Freelancer,Cybersecurity,Network Security,Intermediate,927,34,6,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-070,Upwork,Cybersecurity,Vulnerability Assessment,Intermediate,2442,28,6,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-071,Upwork,QA & Testing,Manual Testing,Expert,554,38,6,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-072,Fiverr,QA & Testing,Automation Testing,Entry,839,67,6,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-073,Freelancer,QA & Testing,Selenium,Expert,1013,37,6,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-074,Upwork,QA & Testing,API Testing,Intermediate,1721,28,6,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-075,Fiverr,QA & Testing,Performance Testing,Entry,1542,35,6,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-076,Freelancer,QA & Testing,Manual Testing,Entry,705,60,6,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-077,Upwork,QA & Testing,Automation Testing,Entry,1014,16,6,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-078,Fiverr,QA & Testing,Selenium,Intermediate,623,14,6,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-079,Freelancer,QA & Testing,API Testing,Entry,284,25,6,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-080,Upwork,QA & Testing,Performance Testing,Expert,1336,53,6,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-081,Upwork,E-commerce & CMS,Shopify Development,Intermediate,869,13,6,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-082,Fiverr,E-commerce & CMS,WordPress Development,Entry,2441,20,6,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-083,Freelancer,E-commerce & CMS,WooCommerce,Intermediate,439,42,6,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-084,Upwork,E-commerce & CMS,CMS Customization,Intermediate,844,59,6,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-085,Fiverr,E-commerce & CMS,Store Optimization,Entry,2412,26,6,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-086,Freelancer,E-commerce & CMS,Shopify Development,Intermediate,1624,24,6,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-087,Upwork,E-commerce & CMS,WordPress Development,Expert,2274,22,6,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-088,Fiverr,E-commerce & CMS,WooCommerce,Intermediate,533,16,6,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-089,Freelancer,E-commerce & CMS,CMS Customization,Expert,817,34,6,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-090,Upwork,E-commerce & CMS,Store Optimization,Entry,463,63,6,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-091,Upwork,API & Integrations,REST API Development,Intermediate,2387,54,6,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-092,Fiverr,API & Integrations,API Integration,Expert,430,34,6,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-093,Freelancer,API & Integrations,Payment Gateway Integration,Expert,179,48,6,2026-10-01,SYNTHETIC_TRAINING_DATA
+SIM-094,Upwork,API & Integrations,Third-party Integrations,Entry,1219,25,6,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-095,Fiverr,API & Integrations,Webhooks,Expert,2094,46,6,2026-09-01,SYNTHETIC_TRAINING_DATA
+SIM-096,Freelancer,API & Integrations,REST API Development,Entry,134,57,6,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-097,Upwork,API & Integrations,API Integration,Intermediate,205,11,6,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-098,Fiverr,API & Integrations,Payment Gateway Integration,Entry,2511,13,6,2026-08-01,SYNTHETIC_TRAINING_DATA
+SIM-099,Freelancer,API & Integrations,Third-party Integrations,Entry,1104,38,6,2026-11-01,SYNTHETIC_TRAINING_DATA
+SIM-100,Upwork,API & Integrations,Webhooks,Intermediate,240,16,6,2026-09-01,SYNTHETIC_TRAINING_DATA

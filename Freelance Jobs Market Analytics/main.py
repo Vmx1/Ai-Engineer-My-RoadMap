@@ -56,9 +56,12 @@ print('Median Salary : ' , median_salary)
 # Distribution Inspection
 #-----------
 total_projects = df['specialty'].value_counts()
+
 print('Total Project : ', total_projects)
 
 print('Total Platform Projects : ', df['platform'].value_counts())
+
+print('Unique Experience Levels : ', df['experience_level'].unique())
 
 print('Total Exper. level : ', df['experience_level'].value_counts())
 
@@ -66,16 +69,42 @@ print('Total Months : ', df['posted_month'].value_counts())
 #-----------------------------------------------
 # Stage 2
 #--------
-clean_df = df # New DF
+clean_df = df.copy() # New DF
 print(clean_df.dtypes)
 #------
 # Value Validation
 #-----------------
-print(clean_df[df['budget_usd'] <= 0 ])
-print(clean_df[df['applicants_or_sellers_signal'] < 0 ])
-print(clean_df[df['illustrative_demand_weight'] < 0 ])
-print(clean_df['platform'].unique()) # ['Upwork', 'Fiverr', 'Freelancer'] so there's no another platform
-print(pd.to_datetime(clean_df['posted_month'] , format='%Y-%m' , errors='coerce'))
+print((clean_df['budget_usd'] <= 0).sum())
+print((clean_df['applicants_or_sellers_signal'] < 0).sum())
+print((clean_df['illustrative_demand_weight'] < 0).sum())
+valid_platform = ['Upwork', 'Fiverr', 'Freelancer']
+invalid_platforms = (~clean_df['platform'].isin(valid_platform)).sum()
+print('Invalid Platforms:', invalid_platforms)
+valid_levels = ['Entry', 'Intermediate', 'Expert']
+invalid_levels = (~clean_df['experience_level'].isin(valid_levels)).sum()
+print('Invalid Levels:', invalid_levels)
+clean_df['posted_month'] = pd.to_datetime(clean_df['posted_month'] , format='%Y-%m' , errors='coerce') 
+invalid_dates = clean_df['posted_month'].isna().sum()
+print(invalid_dates)
 #------------------
 # Data Cleaning
 #--------
+print(clean_df) # لا يوجد أي مشكلة ابداً ولن احذف أي بيانات 
+
+print(clean_df.shape)
+#-------------------------
+
+missing_value = clean_df.isna().sum()
+print('Sum of Missing Values : ' , missing_value)
+
+
+is_duplicated = clean_df.duplicated().sum()
+print('Sum of Duplicate Rows : ' , is_duplicated)
+
+
+is_duplicated_ids = clean_df.duplicated('project_id').sum()
+print('Sum of Duplicate Project ID : ' , is_duplicated_ids)
+
+#------------------------
+
+clean_df.to_csv('clean_freelance_market.csv' , index=False)
