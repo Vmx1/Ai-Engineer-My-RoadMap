@@ -77,12 +77,15 @@ print(clean_df.dtypes)
 print((clean_df['budget_usd'] <= 0).sum())
 print((clean_df['applicants_or_sellers_signal'] < 0).sum())
 print((clean_df['illustrative_demand_weight'] < 0).sum())
+
 valid_platform = ['Upwork', 'Fiverr', 'Freelancer']
 invalid_platforms = (~clean_df['platform'].isin(valid_platform)).sum()
 print('Invalid Platforms:', invalid_platforms)
+
 valid_levels = ['Entry', 'Intermediate', 'Expert']
 invalid_levels = (~clean_df['experience_level'].isin(valid_levels)).sum()
 print('Invalid Levels:', invalid_levels)
+
 clean_df['posted_month'] = pd.to_datetime(clean_df['posted_month'] , format='%Y-%m' , errors='coerce') 
 invalid_dates = clean_df['posted_month'].isna().sum()
 print(invalid_dates)
@@ -108,3 +111,8 @@ print('Sum of Duplicate Project ID : ' , is_duplicated_ids)
 #------------------------
 
 clean_df.to_csv('clean_freelance_market.csv' , index=False)
+
+#------------------------------
+# Stage 3
+#---------
+
