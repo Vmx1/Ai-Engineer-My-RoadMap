@@ -115,4 +115,11 @@ clean_df.to_csv('clean_freelance_market.csv' , index=False)
 #------------------------------
 # Stage 3
 #---------
+# Specialty Analysis
+
+for c in clean_df['specialty'].value_counts():
+    percentage = c / clean_df['specialty'].value_counts().sum() * 100
+    print(percentage)
+
+#-------------------
 
