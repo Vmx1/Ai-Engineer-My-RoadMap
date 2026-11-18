@@ -69,3 +69,13 @@ print('Total Months : ', df['posted_month'].value_counts())
 clean_df = df # New DF
 print(clean_df.dtypes)
 #------
+# Value Validation
+#-----------------
+print(clean_df[df['budget_usd'] <= 0 ])
+print(clean_df[df['applicants_or_sellers_signal'] < 0 ])
+print(clean_df[df['illustrative_demand_weight'] < 0 ])
+print(clean_df['platform'].unique()) # ['Upwork', 'Fiverr', 'Freelancer'] so there's no another platform
+print(pd.to_datetime(clean_df['posted_month'] , format='%Y-%m' , errors='coerce'))
+#------------------
+# Data Cleaning
+#--------
