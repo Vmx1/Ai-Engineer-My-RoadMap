@@ -32,3 +32,6 @@ print('Sum of Duplicate : ' , is_duplicated_ids)
 print(df['platform'].unique())
 print(df['platform'].nunique())
 print(df['platform'].value_counts())
+#---------------------------
+# Statistical Inspection
+#-----------
