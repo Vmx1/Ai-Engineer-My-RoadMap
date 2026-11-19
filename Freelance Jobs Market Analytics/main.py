@@ -6,7 +6,7 @@ import matplotlib as plot
 #------------------------
 # Read Csv 
 #--------
-df = pd.read_csv(r'c:\Users\mohan\Downloads\freelance_tech_market_100_synthetic.csv')
+df = pd.read_csv(r'freelance_tech_market_100_synthetic.csv')
 #-----------------
 # Structural Inspection
 #------
@@ -122,4 +122,15 @@ for c in clean_df['specialty'].value_counts():
     print(percentage)
 
 #-------------------
+# Platform Analysis
+#-----
+print(clean_df.groupby('platform')['specialty'].size())
+specialty_counts = clean_df['specialty'].value_counts()
 
+print(specialty_counts.sort_values(ascending=False))
+
+platform_specialty = clean_df.groupby(
+    ['platform', 'specialty']
+).size()
+
+print(platform_specialty)
